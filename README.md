@@ -1,62 +1,32 @@
-Certificationy CLI
-==================
+Certificationy
+==============
 
-[![Build Status](https://secure.travis-ci.org/certificationy/certificationy-cli.png?branch=master)](http://travis-ci.org/certificationy/certificationy-cli)
+[![Join the chat at https://gitter.im/certificationy/certificationy](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/certificationy/certificationy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+[![Build Status](https://secure.travis-ci.org/certificationy/certificationy.png?branch=master)](http://travis-ci.org/certificationy/certificationy)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/cd3b6bc1-632e-491a-abfc-43edc390e1cc/mini.png)](https://insight.sensiolabs.com/projects/cd3b6bc1-632e-491a-abfc-43edc390e1cc)
 
-This is the CLI tool to train on certifications.
+---
 
-# How it looks?
+**Important**: Certificationy is not affiliated with SensioLabs or Symfony and you must not contribute if you have ever tried to pass the exam.
 
-![Certificationy application](https://cloud.githubusercontent.com/assets/1247388/17698070/434e3944-63b9-11e6-80c6-91706dbbea50.png "Certificationy application")
+---
 
-# Installation and update
+This is the Certificationy (a library to train on Symfony Certification) core library.
 
-## Using Composer
-```
-$ composer create-project certificationy/certificationy-cli
-$ php certificationy.php
-```
+# How to use it?
 
-## More run options
+CLI tool
+--------
 
-### Select the number of questions
-```
-$ php certificationy.php start --number=10
-```
+A CLI tool is available under the following repository: http://www.github.com/certificationy/certificationy-cli.
 
-The default value is 20.
+Web platform
+------------
 
-### List categories
-```
-$ php certificationy.php start --list [-l]
-```
+Test yourself on the web platform (soon available) on the following website: http://www.certificationy.com
 
-Will list all the categories available
+# Please, add your questions!
 
-### Only questions from certain categories
-```
-$ php certificationy.php start "Automated tests" "Bundles"
-```
-
-Will only get the questions from the categories "Automated tests" and "Bundles"
-
-Use the category list from [List categories](#list-categories)
-
-### Show if a question has multiple choices
-```
-$ php certificationy.php start --show-multiple-choice
-```
-
-![Multiple choices](https://cloud.githubusercontent.com/assets/795661/3308225/721b5324-f679-11e3-8d9d-62ba32cd8e32.png "Multiple choices")
-
-### And all combined
-```
-$ php certificationy.php start --number=5 --show-multiple-choice "Automated tests" "Bundles"
-```
-
-* 5 questions
-* We will show if a questions has multiple choices
-* Only get questions from category "Automated tests" and "Bundles"
-
-> Note: if you pass --list [-l] then you will ONLY get the category list, regarding your other settings
+You can submit PR with your own questions into the `data/` directory to extends questions database.
+More we will have questions, the more powerful will be this tool!

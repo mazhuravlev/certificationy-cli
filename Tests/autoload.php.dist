@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Certificationy CLI application.
+ * This file is part of the Certificationy application.
  *
  * (c) Vincent Composieux <vincent.composieux@gmail.com>
  *
